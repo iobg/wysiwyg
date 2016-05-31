@@ -19,7 +19,61 @@ var people =[
   		birth:1809,
   		death:1865
   	}
-  }];
+  },{
+  	title: "President",
+  	name: "Abraham Lincoln",
+  	bio: "16th president of the united states, served during the civil war and abolished slavery",
+  	image: "http://a4.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTIwNjA4NjMzODg2NTc0MDky.jpg",
+  	lifespan: {
+  		birth:1809,
+  		death:1865
+  	}
+  },{
+  	title: "President",
+  	name: "Abraham Lincoln",
+  	bio: "16th president of the united states, served during the civil war and abolished slavery",
+  	image: "http://a4.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTIwNjA4NjMzODg2NTc0MDky.jpg",
+  	lifespan: {
+  		birth:1809,
+  		death:1865
+  	}
+  },{
+  	title: "President",
+  	name: "Abraham Lincoln",
+  	bio: "16th president of the united states, served during the civil war and abolished slavery",
+  	image: "http://a4.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTIwNjA4NjMzODg2NTc0MDky.jpg",
+  	lifespan: {
+  		birth:1809,
+  		death:1865
+  	}
+  },{
+  	title: "President",
+  	name: "Abraham Lincoln",
+  	bio: "16th president of the united states, served during the civil war and abolished slavery",
+  	image: "http://a4.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTIwNjA4NjMzODg2NTc0MDky.jpg",
+  	lifespan: {
+  		birth:1809,
+  		death:1865
+  	}
+  },{
+  	title: "President",
+  	name: "Abraham Lincoln",
+  	bio: "16th president of the united states, served during the civil war and abolished slavery",
+  	image: "http://a4.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTIwNjA4NjMzODg2NTc0MDky.jpg",
+  	lifespan: {
+  		birth:1809,
+  		death:1865
+  	}
+  },{
+  	title: "President",
+  	name: "Abraham Lincoln",
+  	bio: "16th president of the united states, served during the civil war and abolished slavery",
+  	image: "http://a4.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTIwNjA4NjMzODg2NTc0MDky.jpg",
+  	lifespan: {
+  		birth:1809,
+  		death:1865
+  	}
+  },];
 var container=document.getElementById("people");
 
 for(i=0;i<people.length;i++){
@@ -53,7 +107,7 @@ function cardClick(){
 		}
 	textBox.addEventListener("keyup", function(){
 		if(textBox.value != ""){
-		bio.innerHTML=textBox.value;
+		bio.innerHTML="<span>" + textBox.value+"</span>";
 		}
 		if(event.code==="Enter"){
 			textBox.value="";

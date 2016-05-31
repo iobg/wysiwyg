@@ -9,7 +9,7 @@
 
 .bio		{width:100;
 			height:35%;
-			text-wrap:normal;
+			word-wrap:break-word;
 			}
 .cardfoot{	height:10%;
 			padding-top:10%;}
