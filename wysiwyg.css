@@ -1,0 +1,7 @@
+.person {	width:30%;
+			display:inline-block;}
+
+.person img{width:100%;}
+.even{		background:lightyellow;}
+.odd{		background:lightblue;}
+
