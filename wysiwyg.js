@@ -27,7 +27,7 @@ for(i=0;i<people.length;i++){
 	+ "<section><div id='bio'>" +people[i].bio + "</div><img src='"+ people[i].image + "'></section>"
 	+ "<footer>"+ people[i].lifespan.birth + people[i].lifespan.death + "</footer></div";
 
-	if(i%2==0){
+	if(i%2===0){
 		document.getElementById(i).classList.toggle("even");
 	}
 	else{
@@ -40,10 +40,11 @@ var cards=document.getElementsByClassName("person");
 for(i=0;i<cards.length;i++){
 	cards.item(i).addEventListener("click", cardClick);
 }
-
+var bio;
 function cardClick(){
 	event.currentTarget.classList.toggle("border");
-	var bio = event.currentTarget.children[1].children[0];
+	bio = event.currentTarget.children[1].children[0];
+	console.log(bio);
 	textBox.focus();
 	textBox.addEventListener("keyup", function(){
 		bio.innerHTML=textBox.value;
