@@ -1,3 +1,4 @@
+var textBox = document.getElementById("input");
 var people =[
 {
   title: "Samurai",
@@ -23,10 +24,9 @@ var container=document.getElementById("people");
 
 for(i=0;i<people.length;i++){
 	container.innerHTML+="<div class='person' id='"+i+"'><header>"+ people[i].title + people[i].name + "</header>"
-	+ "<section>" +people[i].bio + "<img src='"+ people[i].image + "'></section>"
+	+ "<section><div id='bio'>" +people[i].bio + "</div><img src='"+ people[i].image + "'></section>"
 	+ "<footer>"+ people[i].lifespan.birth + people[i].lifespan.death + "</footer></div";
-}
-for(i=0;i<people.length;i++){
+
 	if(i%2==0){
 		document.getElementById(i).classList.toggle("even");
 	}
@@ -35,3 +35,21 @@ for(i=0;i<people.length;i++){
 	}
 }
 
+
+var cards=document.getElementsByClassName("person");
+for(i=0;i<cards.length;i++){
+	cards.item(i).addEventListener("click", cardClick);
+}
+
+function cardClick(){
+	event.currentTarget.classList.toggle("border");
+	var bio = event.currentTarget.children[1].children[0];
+	textBox.focus();
+	textBox.addEventListener("keyup", function(){
+		bio.innerHTML=textBox.value;
+		if(event.code==="Enter"){
+			textBox.value="";
+		}
+
+	})
+}

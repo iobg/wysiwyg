@@ -4,4 +4,5 @@
 .person img{width:100%;}
 .even{		background:lightyellow;}
 .odd{		background:lightblue;}
+.border{	border:2px dotted black;}
 
